@@ -1,0 +1,10 @@
+package threadChangeActionOrFinishTread;
+
+public class MainTread {
+	public static void main(String[] args){
+		
+		
+		
+	}
+
+}

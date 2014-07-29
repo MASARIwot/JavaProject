@@ -1,0 +1,11 @@
+package threadFightBetweenChickenAndEggs;
+
+public class EggsSay implements Runnable {
+	
+	
+	public void run() {
+		System.out.println("ßיצו" + Counter.getI());
+		
+	}
+
+}

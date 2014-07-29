@@ -1,0 +1,23 @@
+command=D\:\\Task_1\\
+content_assist_disabled_computers=org.eclipse.recommenders.completion.rcp.templates.category\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.subwords.rcp.category\u0000org.eclipse.recommenders.completion.rcp.chain.category\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="OOP.Person"><rhs name\="OOP.Person"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="Interfaces.Work"><rhs name\="OOP.TimeWork"/><rhs name\="OOP.TimeWorkFree"/></lhs><lhs name\="OOP.TimeWork"><rhs name\="OOP.TimeWork"/><rhs name\="OOP.TimeWorkFree"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="File.WriterFile"><rhs name\="File.WriterFile"/></lhs><lhs name\="OOP.TimeWorkFree"><rhs name\="OOP.TimeWorkFree"/></lhs><lhs name\="File.ReadFile"><rhs name\="File.ReadFile"/></lhs><lhs name\="\u043Ebserver.TestClass"><rhs name\="\u043Ebserver.TestClass"/></lhs><lhs name\="\u043Ebserver.TestA"><rhs name\="\u043Ebserver.TestA"/></lhs><lhs name\="\u043Ebserver.TestB"><rhs name\="\u043Ebserver.TestB"/></lhs><lhs name\="strategy.Abstract"><rhs name\="strategy.SpecificOne"/><rhs name\="strategy.SpecificTwo"/></lhs><lhs name\="singleton.Singleton"><rhs name\="singleton.Singleton"/></lhs><lhs name\="Customer"><rhs name\="Customer"/></lhs><lhs name\="Rental"><rhs name\="Rental"/></lhs><lhs name\="Exception.aExep"><rhs name\="Exception.aExep"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.lang.Exception"/><rhs name\="java.lang.InterruptedException"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.lang.Exception"/><rhs name\="java.lang.InterruptedException"/></lhs><lhs name\="java.lang.InterruptedException"><rhs name\="java.lang.InterruptedException"/></lhs><lhs name\="First_1.someStandartMethod"><rhs name\="First_1.someStandartMethod"/></lhs><lhs name\="java.lang.Thread"><rhs name\="threadTest.threadTest"/><rhs name\="java.lang.Thread"/></lhs><lhs name\="java.lang.Runnable"><rhs name\="threadTest.threadTest"/><rhs name\="threadTest.SomeRunnableInterFace"/><rhs name\="threadFightBetweenChickenAndEggs.ChickenSay"/><rhs name\="threadFightBetweenChickenAndEggs.EggsSay"/><rhs name\="java.lang.Thread"/><rhs name\="threadChangeActionOrFinishTread.SomeActionIncrementOrDecrement"/></lhs><lhs name\="threadTest.threadTest"><rhs name\="threadTest.threadTest"/></lhs><lhs name\="threadTest.SomeRunnableInterFace"><rhs name\="threadTest.SomeRunnableInterFace"/></lhs><lhs name\="threadTest.threadTest2"><rhs name\="threadTest.threadTest2"/></lhs><lhs name\="threadChangeActionOrFinishTread.SomeActionIncrementOrDecrement"><rhs name\="threadChangeActionOrFinishTread.SomeActionIncrementOrDecrement"/></lhs></history>
+content_assist_number_of_computers=21
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jdt.ui.typefilter.disabled=File.*;Interfaces.*;OOP.*;
+org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,27 @@
+{
+  "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "D:\\Task_1\\OOP_first\\src": {
+    "location": "D:\\Task_1\\OOP_first\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Task_1\\OOP_first\\src\u0027. Skipped."
+  },
+  "D:\\Task_1\\Pattern\\src": {
+    "location": "D:\\Task_1\\Pattern\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Task_1\\Pattern\\src\u0027. Skipped."
+  },
+  "D:\\Task_1\\Test\\src": {
+    "location": "D:\\Task_1\\Test\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Task_1\\Test\\src\u0027. Skipped."
+  },
+  "D:\\Task_1\\LittleTasks\\src": {
+    "location": "D:\\Task_1\\LittleTasks\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Task_1\\LittleTasks\\src\u0027. Skipped."
+  }
+}

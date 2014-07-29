@@ -1,0 +1,20 @@
+package threadChangeActionOrFinishTread;
+
+public class SomeActionIncrementOrDecrement implements Runnable{
+	static volatile  boolean forChangeAction = true;
+	static volatile  boolean forFinish = false;
+	
+	public void changeAction () {
+		forChangeAction =! forChangeAction;
+	}
+	
+	public void finish() {
+		forFinish = true; 
+	}
+		
+	//@Override
+	public void run() {
+		
+	}
+
+}

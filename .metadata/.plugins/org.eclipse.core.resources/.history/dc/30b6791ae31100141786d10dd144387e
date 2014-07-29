@@ -1,0 +1,45 @@
+package threadFightBetweenChickenAndEggs;
+
+public class FightMain {
+	static{System.out.println("Start Class: FightMain. Package:threadFightBetweenChickenAndEggs  "+ Counter.getСurrentI());}
+	private static EggsSay egg;
+	private static int index =0;
+
+	public static void main(String[] args) throws InterruptedException{
+		{System.out.println("lets Fight! "+ "Поточний шндекс лічильника :: "+ Counter.getСurrentI());}
+		
+		//**********************************************************
+		Thread chicken = new Thread(new ChickenSay()); //Implement
+		egg = new EggsSay(); //!! Extend
+		//**********************************************************
+		chicken.start();
+		egg.start();
+		//**********************************************************
+		for(int i = 0 ; i < 10 ; i++){
+			Counter.currentSleep();
+			System.out.println("Поточний шндекс лічильника ::  "
+								+ Counter.getСurrentI()
+								+"- Звертання::  "
+								+ index++);
+		}
+		
+		
+		 if(chicken.isAlive() && !egg.isAlive()){
+			 chicken.join(); 
+			 	System.out.println("Першим була курка ::" + Counter.getСurrentI());
+			}else if(egg.isAlive() && !chicken.isAlive() ){ 
+				egg.join(); 
+				System.out.println("Першим було яйце ::" + Counter.getСurrentI());}
+			else {
+			 egg.join(); 
+			 chicken.join();  
+			 	System.out.println("Оба не праві::" + Counter.getСurrentI());}
+		 
+		 //while(chicken.isAlive() && egg.isAlive()){ } 
+		
+		 System.out.println("Конфлікт завершино ! Поточний шндекс лічильника ::" + Counter.getСurrentI());
+		
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+package threadChangeActionOrFinishTread;
+
+public class MainTreadForInterruption {
+	
+	public static void main(String[] args){
+		
+		
+	}
+
+}

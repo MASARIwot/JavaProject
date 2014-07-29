@@ -1,0 +1,21 @@
+package threadChangeActionOrFinishTread;
+
+public class SomeActionIncrementOrDecrement extends Thread{
+	static boolean forChangeAction = true;
+	static boolean forFinish = false;
+	
+	public void changeAction () {
+		forChangeAction =! forChangeAction;
+	}
+	
+	public void finish() {
+		forFinish = true; 
+	}
+	
+	
+	//@Override
+	public void run() {
+		
+	}
+
+}

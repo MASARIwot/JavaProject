@@ -1,0 +1,13 @@
+package threadChangeActionOrFinishTread;
+
+public class SomeActionIncrementOrDecrement extends Thread{
+	
+	
+	
+	
+	//@Override
+	public void run() {
+		
+	}
+
+}

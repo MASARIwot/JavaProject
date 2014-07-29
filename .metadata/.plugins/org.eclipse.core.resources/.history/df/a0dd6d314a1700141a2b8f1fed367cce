@@ -1,0 +1,12 @@
+package threadChangeActionOrFinishTread;
+
+public class SomeActionForInterruption extends Thread{
+	
+	static volatile  boolean forChangeAction = true;
+	
+	public void run() {
+		
+		
+	}
+
+}

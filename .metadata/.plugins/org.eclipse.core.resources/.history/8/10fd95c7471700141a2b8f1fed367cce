@@ -1,0 +1,33 @@
+package threadChangeActionOrFinishTread;
+
+public class MainTread {
+	public  static int valueToPrint = 0;
+	//private static SomeActionIncrementOrDecrement foFirst;
+	
+	public static void main(String[] args){
+		//foFirst = new SomeActionIncrementOrDecrement();
+		Thread foFirst = new(new SomeActionIncrementOrDecrement()); 
+		//Thread first = new Thread(foFirst); 
+		System.out.print("Значення :");
+		foFirst.start();
+		
+		for(int i  = 0; i < 5; i++){
+			System.out.println("");				
+			try{
+				Thread.sleep(1000);
+			}catch (InterruptedException e) {
+				e.printStackTrace();
+			}//*/
+			
+			foFirst.changeAction();
+			
+		
+		}
+		
+		
+		foFirst.finish();
+		//foFirst.stop(); //in that way can be done without foFirst.finish();
+		
+	}
+
+}

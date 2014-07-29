@@ -1,0 +1,15 @@
+package threadChangeActionOrFinishTread;
+
+public class MainTread {
+	public static int valueToPrint = 0; 
+	
+	public static void main(String[] args){
+		
+		Thread first = new Thread(new SomeActionIncrementOrDecrement()); 
+		System.out.print("Значення :: ");
+		first.start();
+		
+		
+	}
+
+}

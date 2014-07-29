@@ -1,0 +1,34 @@
+package threadChangeActionOrFinishTread;
+
+public class SomeActionIncrementOrDecrement implements Runnable{
+	static volatile  boolean forChangeAction = true;
+	static volatile  boolean forFinish = false;
+	
+	public void changeAction () {
+		forChangeAction =! forChangeAction;
+	}
+	
+	public void finish() {
+		forFinish = true; 
+	}
+		
+	//@Override
+	public void run() {
+		
+		do{
+			
+			if(!forFinish){
+				if(forChangeAction){
+					System.out.print(MainTread.valueToPrint++ + " ");
+				}else{
+						System.out.print(MainTread.valueToPrint-- + " ");						
+					 }
+			}else return;
+			
+			
+		}while(true);
+		
+		
+	}
+
+}
