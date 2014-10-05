@@ -1,0 +1,9 @@
+cd D:\Task_1\Lesson_2_KPI_FX\src
+javac server\Main.java
+java -classpath . server.Main
+
+javac socketClient\Client.java
+java -classpath . socketClient.Client AAPL
+
+
+

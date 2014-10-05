@@ -1,0 +1,9 @@
+cd D:\Task_1\Lesson18_1_Socket_Client_Server\src
+javac soketServer\Server.java
+java -classpath . soketServer.Server
+
+javac socketClient\Client.java
+java -classpath . socketClient.Client AAPL
+
+
+

@@ -1,9 +1,0 @@
-package threadFightBetweenChickenAndEggs;
-
-public class EggsSay implements Runnable {
-	
-	public void run() {
-		
-	}
-
-}

@@ -1,6 +1,0 @@
-package threadChangeActionOrFinishTread;
-
-public class SomeActionForInterruption extends Thread{
-	
-
-}
