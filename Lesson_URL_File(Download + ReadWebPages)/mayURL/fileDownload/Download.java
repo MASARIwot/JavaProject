@@ -21,7 +21,7 @@ public class Download {
 			  e.printStackTrace();
 		  }
 		
-		try(BufferedOutputStream writeStream = new BufferedOutputStream(new FileOutputStream("budam385.mp3"));
+		try(BufferedOutputStream writeStream = new BufferedOutputStream(new FileOutputStream("XXX.mp3"));
 		InputStream inStream = urlConnect.getInputStream();){
 			int data =0;
 			int data2 =0;
