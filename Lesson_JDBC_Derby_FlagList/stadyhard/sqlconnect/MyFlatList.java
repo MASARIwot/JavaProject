@@ -58,6 +58,7 @@ public class MyFlatList implements InterfaceOfListOfFlag {
 	 */
 	@Override
 	public void updateSql(String url,String sqlDriver){
+		this.connection = null;
 		this.sqlDriver = sqlDriver;
 		this.url = url;
 	}/*updateSql*/
