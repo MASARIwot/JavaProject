@@ -17,6 +17,7 @@ public class TestSql {
 	public void testMySqlConect() {
 		InterfaceOfListOfFlag testMy = new MyFlatList();
 		ArrayList<FlagBox> listFlagBox = new ArrayList<FlagBox>();
+		try{/*FirstTry*/
 		System.out.println("Test 1");
 		try {
 			listFlagBox = testMy.getAllFlag();
@@ -44,14 +45,15 @@ public class TestSql {
 											
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
-		} finally{
+		} /*try*/
+		}finally{
 			try {
 				testMy.closeSQL();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 				
-		}/*try*/
+		}/*FirstTry*/
 		System.out.println(listFlagBox.toString());	
 		
 	}/*testMySqlConect*/
