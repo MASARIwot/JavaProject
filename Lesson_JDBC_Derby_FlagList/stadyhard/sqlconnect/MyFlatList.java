@@ -12,11 +12,11 @@ import java.util.ArrayList;
 import flagbox.FlagBox;
 
 /**
- * This a My littelPool conection with JDBC
- * Proram connect to derby To the tabel Flag adn save(throw) result in ArrayList<FlagBox>
- * FlagBox it*s a class whot save Flad data
+ * This a My littelPool connection to the JDBC
+ * Program is connect to derby To the table Flag and save(throw) result in ArrayList<FlagBox>
+ * FlagBox it*s a class what save Flag data
  * @see  flagbox.FlagBox
- * @author Саня
+ * @author РЎР°РЅСЏ
  *
  */
 public class MyFlatList implements InterfaceOfListOfFlag {
