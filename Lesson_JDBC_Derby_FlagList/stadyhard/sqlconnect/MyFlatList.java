@@ -1,6 +1,9 @@
 package sqlconnect;
 import interfaces.InterfaceOfListOfFlag;
 
+
+
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,6 +12,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+
+
+
+import annotation.SqlAnnotation;
+
+
+
 import flagbox.FlagBox;
 
 /**
@@ -16,10 +26,10 @@ import flagbox.FlagBox;
  * Program is connect to derby To the table Flag and save(throw) result in ArrayList<FlagBox>
  * FlagBox it*s a class what save Flag data
  * @see  flagbox.FlagBox
- * @author –°–∞–Ω—è
+ * @author —‡Ìˇ
  *
  */
-public class MyFlatList implements InterfaceOfListOfFlag {
+public class MyFlatList implements InterfaceOfListOfFlag  {
 	/*
 	 * For a connection with sql
 	 */
@@ -78,9 +88,12 @@ public class MyFlatList implements InterfaceOfListOfFlag {
 	/* (non-Javadoc)
 	 * @see sqlconnect.InterfaceOfListOfFlag#getAllFlag()
 	 */
+	//@SqlAnnotation( sqlQverys =  "SELECT * from Flat" )
 	@Override
+	@SqlAnnotation (sqlQvery="Select * from Employee")
 	public ArrayList<FlagBox> getAllFlag() throws SQLException ,ClassNotFoundException{
 		    connection = initSQl();
+		    //String df =;
 		    this.sqlQuery = "SELECT * from Flat"; /*Same standart Qvery*/
 			statment = connection.createStatement();
 			result = statment.executeQuery(sqlQuery);
@@ -89,6 +102,7 @@ public class MyFlatList implements InterfaceOfListOfFlag {
 	/* (non-Javadoc)
 	 * @see sqlconnect.InterfaceOfListOfFlag#sqlReqvestForSqvereMoreThan(java.lang.String)
 	 */
+	@SqlAnnotation (sqlQvery="SELECT * from Flat WHERE SQVERE > ?")
 	@Override
 	public ArrayList<FlagBox> sqlReqvestForSqvereMoreThan(String sqvereMoreThet)throws SQLException ,ClassNotFoundException{
 		    String sqlQ = "SELECT * from Flat WHERE SQVERE > ?";
@@ -101,6 +115,7 @@ public class MyFlatList implements InterfaceOfListOfFlag {
 	/* (non-Javadoc)
 	 * @see sqlconnect.InterfaceOfListOfFlag#sqlReqvestForRoomsOnSqvereMoreThan(java.lang.String, java.lang.String)
 	 */
+	@SqlAnnotation (sqlQvery="SELECT * FROM Flat WHERE ROOMS >= ? AND SQVERE > ?")
 	@Override
 	public ArrayList<FlagBox> sqlReqvestForRoomsOnSqvereMoreThan(String rooms,String sqvereMoreThet)throws SQLException ,ClassNotFoundException{
 		 String sqlQ = "SELECT * FROM Flat WHERE ROOMS >= ? AND SQVERE > ?";
@@ -148,11 +163,14 @@ public class MyFlatList implements InterfaceOfListOfFlag {
 		try {
 			connection.close();
 			statment.close();
+			preparedStatment.close();
 			result.close();
 		} catch (SQLException e) {
 		  throw new SQLException();
 		}
 	}/*closeSQL*/
+	
+	
 	
 
 }//MyFlatList
