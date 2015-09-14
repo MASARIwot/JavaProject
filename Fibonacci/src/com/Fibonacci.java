@@ -13,6 +13,24 @@ public class Fibonacci {
 		else
 			return fib(n - 1) + fib(n - 2);
 	}
+	
+	public int fiboByRemember(int n) {
+		if (n < 2) {
+			return 1;
+		}
+		int first = 1;
+		int second = 1;
+		int ans = 0;
+
+		for (int i = 0; i < n; i++) {
+			ans = first + second;
+			first = second;
+			second = ans;
+
+		}
+
+		return ans;
+	}
 
 	public int sumEvenNumber(int max) {
 
