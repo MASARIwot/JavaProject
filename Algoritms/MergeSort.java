@@ -10,7 +10,6 @@ public class MergeSort<T extends Comparable<T>> {
 			return unsortedList;
 		}
 		// trash list for splits
-		ArrayList<T> sortedList = new ArrayList<T>();
 		ArrayList<T> left = new ArrayList<T>();
 		ArrayList<T> right = new ArrayList<T>();
 		int middel = unsortedList.size() / 2;
@@ -22,17 +21,16 @@ public class MergeSort<T extends Comparable<T>> {
 				right.add(unsortedList.get(i));
 			}
 		}
-
+		
 		left = mergeSort(left);
 		right = mergeSort(right);
 		// merge this list @see copy constructor at Binary tree realization
-		sortedList = merge(left, right);
-		return sortedList;
+	return merge(unsortedList,left, right);
 	}
 
-	private ArrayList<T> merge(ArrayList<T> left, ArrayList<T> right) {
+	private ArrayList<T> merge(ArrayList<T> buffList,ArrayList<T> left, ArrayList<T> right) {
 		// prepare list
-		ArrayList<T> buffList = new ArrayList<T>();
+		buffList.clear();
 		while (left.size() > 0 || right.size() > 0) {
 
 			if (left.size() > 0 && right.size() > 0) {
